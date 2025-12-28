@@ -1,0 +1,57 @@
+{
+    "output_dir": "./experimental_results",
+
+    "baseline_comparison": {
+        "dataset": "celeba-hq",
+        "data_path": "/path/to/celeba-hq",
+        "image_dir": "/path/to/celeba-hq/images",
+        "attr_file": "/path/to/celeba-hq/list_attr_celeba.txt",
+        "epochs": 100,
+        "batch_size": 32,
+        "learning_rate": 0.0001,
+        "num_concepts": 8,
+        "num_classes": 2,
+        "lambda_cls": 1.0,
+        "lambda_ortho": 0.1
+    },
+
+    "ablation_study": {
+        "dataset": "celeba-hq",
+        "data_path": "/path/to/celeba-hq",
+        "image_dir": "/path/to/celeba-hq/images",
+        "attr_file": "/path/to/celeba-hq/list_attr_celeba.txt",
+        "epochs": 100,
+        "batch_size": 32,
+        "learning_rate": 0.0001,
+        "num_concepts": 8,
+        "num_classes": 2,
+        "lambda_cls": 1.0,
+        "lambda_ortho": 0.1
+    },
+
+    "shapes3d": {
+        "dataset": "shapes3d",
+        "data_path": "/path/to/3dshapes.h5",
+        "epochs": 50,
+        "batch_size": 64,
+        "learning_rate": 0.0001,
+        "num_concepts": 6,
+        "num_classes": 4,
+        "lambda_cls": 1.0,
+        "lambda_ortho": 0.1
+    },
+
+    "visualization": {
+        "num_samples": 16,
+        "concept_names": [
+            "Bangs",
+            "Beard",
+            "Smiling",
+            "Male",
+            "Young",
+            "Eyeglasses",
+            "Wavy_Hair",
+            "Wearing_Hat"
+        ]
+    }
+}
